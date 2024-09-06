@@ -40,7 +40,7 @@ class DataTransformation:
                 steps=[
                     ("imputer",SimpleImputer(strategy='most_frequent')), # imputer, handling missing values
                     ("one_hot_encoder",OneHotEncoder()),
-                    ('standardsclar',StandardScaler())
+                    ('standardsclar',StandardScaler(with_mean=False))
                     ]
 
             )
